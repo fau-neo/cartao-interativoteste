@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Interativo Mary Kay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 1080px;
+            height: 1920px;
+        }
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .overlay img {
+            width: 100%;
+            height: auto;
+        }
+        .buttons {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+        .buttons a {
+            display: block;
+        }
+        .buttons img {
+            width: 250px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Vídeo de fundo -->
+        <iframe class="background-video" src="https://player.vimeo.com/video/1063861645?autoplay=1&loop=1&muted=1&background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        
+        <!-- Imagem de sobreposição com textos -->
+        <div class="overlay">
+            <img src="Arte-cartao-interativo.png" alt="Arte do cartão">
+        </div>
+        
+        <!-- Botões clicáveis -->
+        <div class="buttons">
+            <a href="https://wa.me/5591981836260?text=Ol%C3%A1!%20Seja%20muito%20bem-vindo(a)!%20%E2%9C%A8%20Sou%20Sonia%20Costa,%20Diretora%20Regional%20Mary%20Kay,%20e%20estou%20aqui%20para%20te%20ajudar%20a%20real%C3%A7ar%20sua%20beleza%20e%20autoconfian%C3%A7a%20com%20produtos%20incr%C3%ADveis.%20Me%20conta,%20como%20posso%20te%20ajudar%20hoje?%20%F0%9F%92%96" target="_blank">
+                <img src="Botão-WhatsApp.png" alt="Fale Comigo">
+            </a>
+            <a href="https://sejaumaconsultoramarykay.com.br/?utm_source=quizbase&utm_medium=menusuperior&utm_id=sejaumaconsultora#vantagens" target="_blank">
+                <img src="Botão-Seja-uma-consultora.png" alt="Seja uma Consultora">
+            </a>
+            <a href="https://loja.marykay.com.br/?utm_source=site-corp&utm_medium=referral&utm_campaign=site-corp_referral_botao-comprar_compre-online" target="_blank">
+                <img src="Botão-produtos.png" alt="Produtos">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
